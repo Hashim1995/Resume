@@ -1,0 +1,363 @@
+body{
+  background: #ad5389;  
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  
+  background: linear-gradient(to right, #3c1053, #ad5389); 
+}
+
+#intro{
+    text-align: center;
+    color: #fff;
+    margin: 10% 0 10% 0;
+    font-family: Dosis;
+    letter-spacing: 1px;
+}
+
+.allCont{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 21px 18px 28px -15px black;
+    -moz-box-shadow: 21px 18px 28px -15px black;
+    box-shadow: 21px 18px 28px -15px black;
+    margin-bottom: 5%;
+}
+
+
+input{
+    background-color: none !important;
+    border-color: #ad5389 !important; 
+    border-radius: 40px !important;
+    color: #3c1053 !important;
+    transition: all 0.5s ease-in;
+    font-family: Dosis;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+
+input::placeholder {
+    font-style: italic;
+    color: #3c1053 !important;
+}
+
+
+input:focus, input:link, input:active{
+  box-shadow: none !important;
+  border-color: #3c1053 !important; 
+ 
+  transition: all 0.5s;
+}
+
+
+#mySelect, .educationSelects{
+  background-color: none !important;
+  border-color: #ad5389 !important; 
+  border-radius: 40px !important;
+  color: #3c1053 !important;
+  transition: all 0.5s ease-in;
+  
+}
+
+#mySelect::placeholder {
+  font-style: italic;
+  color: #3c1053 !important;
+}
+
+
+#mySelect:focus, #mySelect:link, #mySelect:active, .educationSelects:focus, .educationSelects:link, .educationSelects:active{
+box-shadow: none !important;
+border-color: #3c1053 !important; 
+transform: scale(1.0);
+transition: all 0.5s;
+}
+
+
+
+
+
+
+#divid {
+  border-top: 1px double #ad5389;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+label{
+    margin-bottom: 5px !important;
+    font-family: Dosis;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#infoPi, #infoEd, #infoJob, #infoSkills{
+  text-align: center;
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  
+  background: linear-gradient(to right, #3c1053, #ad5389); ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.myRadioButtons{
+  width: 200px;
+}
+
+.myRadioButtons input {
+    display: none;
+  }
+  .myRadioButtons > label {
+    display: inline-block;
+    position: relative;
+    margin-right: 16px;
+    padding-left: 24px;
+    cursor: pointer;
+  }
+  .myRadioButtons > label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    border: 1px solid #ad5389;
+    border-radius: 8px;
+  }
+  .myRadioButtons > label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 8px;
+    margin-top: 0;
+    background: #3c1053;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+  }
+  .myRadioButtons :checked + label:after {
+    height: 8px;
+    width: 8px;
+    margin-top: -4px;
+    left: 4px;
+  }
+  
+  .adressINP{
+    display: block !important;
+  }
+
+
+  .myChooseFile::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .myChooseFile::before {
+    content: 'Select';
+    display: inline-block;
+    border-radius: 10px;
+    border-color: #3c1053;
+    border-width: 1px;
+    border-style: solid;
+    padding: 1px 7px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 15px;
+    color:#3c1053 !important;
+  }
+
+
+  #summary, #skills{
+    border-color: #ad5389;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    height: 160px;
+  }
+  #summary::placeholder, #skills::placeholder {
+    font-style: italic;
+    color: #3c1053 !important;
+  }
+
+  #summary:active, #summary:focus,  #skills:active, #skills:focus{
+    box-shadow: none;
+  }
+
+
+
+
+  .myCheckbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.myCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #e9e9e9;
+    border-radius:15px;
+    border: 1px solid #3c1053;
+    transition: 1s;
+}
+
+
+
+.myCheckbox input:checked ~ .checkmark {
+    background-color: #3c1053;
+    transition: 1s;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.myCheckbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.myCheckbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: 1s;
+}
+
+
+.btn {
+  background: #fff;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #3c1053;
+  font-size: 20px;
+  padding: 4px 13px 4px 13px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ad5389;
+  border-radius: 50%;
+  margin-top: 10%;
+
+}
+
+.btn:hover, .btn:active {
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389) !important;  
+  background: linear-gradient(to right, #3c1053, #ad5389) !important;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+
+#edcClonedivTwo, #edcClonedivThree, #edcClonedivFour {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: none;
+}
+
+#workcClonediv, #workcClonedivTwo, #workcClonedivThree, #workcClonedivFour{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: none;
+}
+ 
+#remove, #removeWork{
+  display: none;
+}
+
+.removeEd {
+    background-color:transparent;
+    -moz-border-radius:42px;
+    -webkit-border-radius:42px;
+    border-radius:42px;
+    border:1px solid #ad5389;
+    cursor:pointer;
+    color: #ad5389;
+    font-family:Arial;
+    font-size:22px;
+    padding:2px 8px;
+    text-decoration:none;
+}
+.removeEd:hover{
+    background-color:transparent;
+    cursor: pointer;
+}
+  
+#submitButton{
+  background-color: #fff;
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  color: #3c1053;
+  font-family: Dosis;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ad5389 2px;
+  margin-bottom: 15%;
+}
+
+#submitButton:hover, #submitButton:active, #submitButton:visited, #submitButton:focus{
+  color: #3c1053;
+  border: solid #3c1053 2px;
+  transform: scale(1.1);
+  transform: 0.5s;
+  cursor: pointer;
+  outline: none;
+}
+
+.valid-error{
+  border-color: red!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
